@@ -83,7 +83,7 @@ client.on("message", async message => {
     "color": 1472601,
     "timestamp": new Date(),
     "footer": {
-      "text": "Version 0.1 - MIT License - 2018"
+      "text": "Version 0.1 - ISC License - 2018"
     },
     "thumbnail": {
       "url": "http://superdizor.com/img/dcolors.png"
