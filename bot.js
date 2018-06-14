@@ -79,7 +79,7 @@ client.on("message", async message => {
       message.channel.send({
     "embed": {
     "title": "Thanks for using dColors. You can use the following commands",
-    "description": "\n __**Change your Discord color**__\n*Use color name instead of <color> (Check below for available colors)* \n`+dcolors <color>`\n__**Reset Color to the default**__\n`+dcolors reset`\n__**Other available commands**__\n`+dcolors ping`\n`+dcolors config (WIP)`",
+    "description": "\n __**Change your Discord color**__\n*Use color name instead of <color> (Check below for available colors)* \n`+dcolors <color>`\n__**Reset Color to the default**__\n`+dcolors reset`\n__**Other available commands**__\n`+dcolors ping`\n`+dcolors config (WIP)`\n",
     "color": 1472601,
     "timestamp": new Date(),
     "footer": {
@@ -98,12 +98,18 @@ client.on("message", async message => {
         "value": "```\nred\nblue\ngreen\ngray\norange\npink\nyellow\nbrown\nblack\npurple\nturquoise```"
       },
       {
+        "name": "You like this bot ?",
+        "value": "[Invite **dColors** to your server](https://discordapp.com/oauth2/authorize?&client_id=456585537621327882&scope=bot&permissions=0)"
+      },
+      {
         "name": "GitHub",
-        "value": "[Open Source on GitHub](https://github.com/SuperDizor/dColors) \n *This is one of my first JavaScript Project.* \n    *Give me constructive feedback* "
+        "value": "[Open Source on GitHub](https://github.com/SuperDizor/dColors) \n *This is one of my first JavaScript Project.* \n*Give me constructive feedback* ",
+        "inline": true
       },
       {
         "name": "Social",
-        "value": "[Twitter](https://twitter.com/SuperDizor)\n"
+        "value": "[Twitter](https://twitter.com/SuperDizor)\n",
+        "inline": true
       }
     ]
   }
