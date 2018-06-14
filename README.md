@@ -26,6 +26,23 @@ config.json
 }
 ```
 
+#### Create colors roles on your Discord Server with this following names. (Exact names are very important)
+```sh
+"dRed",
+"dBlue",
+"dGreen",
+"dGray",
+"dOrange",
+"dPink",
+"dYellow",
+"dBrown",
+"dBlack",
+"dPurple",
+"dTurquoise"
+```
+#### Create colors roles on your Discord Server with this following names. (Exact names are very important)
+ - Add "admin" permission role manually to your bot, otherwise he will not have the permission to change members roles"
+
 ## Thank you:
   - Node.js
   - Discord.js
