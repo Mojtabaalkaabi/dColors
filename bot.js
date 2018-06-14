@@ -74,10 +74,46 @@ client.on("message", async message => {
     let member = message.member;
 
     // IF ARG ARE NOT THERE
-    if(!color) {
-      // ADD EMBED SHIT HERE
-      message.reply(`WAZZAAAAAAAA!`);
-    }
+    if(!color || color === "help") {
+
+      message.channel.send({
+    "embed": {
+    "title": "Thanks for using dColors. You can use the following commands",
+    "description": "\n __**Change your Discord color**__\n*Use color name instead of <color> (Check below for available colors)* \n`+dcolors <color>`\n__**Reset Color to the default**__\n`+dcolors reset`\n__**Other available commands**__\n`+dcolors ping`\n`+dcolors config (WIP)`",
+    "color": 1472601,
+    "timestamp": new Date(),
+    "footer": {
+      "text": "Version 0.1 - MIT License - 2018"
+    },
+    "thumbnail": {
+      "url": "http://superdizor.com/img/dcolors.png"
+    },
+    "author": {
+      "name": "dColors - Discord Colors Bot",
+      "icon_url": "http://superdizor.com/img/dcolors.png"
+    },
+    "fields": [
+      {
+        "name": "Colors",
+        "value": "```\nred\nblue\ngreen\ngray\norange\npink\nyellow\nbrown\nblack\npurple\nturquoise```"
+      },
+      {
+        "name": "GitHub",
+        "value": "[Open Source on GitHub](https://github.com/SuperDizor/dColors) \n *This is one of my first JavaScript Project.* \n    *Give me constructive feedback* "
+      },
+      {
+        "name": "Social",
+        "value": "[Twitter](https://twitter.com/SuperDizor)\n"
+      }
+    ]
+  }
+});
+
+
+
+
+};
+
 
     // CONFIG | ADD ROLES TO SERVER
     if(color === "config") {
@@ -123,7 +159,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // GRAY
     if(color === "gray") {
       let role = message.guild.roles.find("name", rolesColors[3]);
       resetColor(message, member);
@@ -132,7 +168,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // ORANGE
     if(color === "orange") {
       let role = message.guild.roles.find("name", rolesColors[4]);
       resetColor(message, member);
@@ -141,7 +177,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // PINK
     if(color === "pink") {
       let role = message.guild.roles.find("name", rolesColors[5]);
       resetColor(message, member);
@@ -150,7 +186,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // YELLOW
     if(color === "yellow") {
       let role = message.guild.roles.find("name", rolesColors[6]);
       resetColor(message, member);
@@ -159,7 +195,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // BROWN
     if(color === "brown") {
       let role = message.guild.roles.find("name", rolesColors[7]);
       resetColor(message, member);
@@ -168,7 +204,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // BLACK
     if(color === "black") {
       let role = message.guild.roles.find("name", rolesColors[8]);
       resetColor(message, member);
@@ -177,7 +213,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // PURPLE
     if(color === "purple") {
       let role = message.guild.roles.find("name", rolesColors[9]);
       resetColor(message, member);
@@ -186,7 +222,7 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // BLUE
+    // TURQUOISE
     if(color === "turquoise") {
       let role = message.guild.roles.find("name", rolesColors[10]);
       resetColor(message, member);

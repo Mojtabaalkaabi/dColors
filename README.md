@@ -1,5 +1,4 @@
 # dColors
-### EARLY BUILD - Version 0.1.0
 
 dColors is a Discord bot for anyone can change his Discord Role color from selected colors.
 
@@ -14,7 +13,7 @@ dColors is a Discord bot for anyone can change his Discord Role color from selec
 ## Installation  
 #### Prerequisite
  - node.js
- - Inside the node project, add discord.js '''npm i discord.js '''
+ - Inside the node project, add discord.js ```npm i discord.js ```
 
 
 #### Create a new file in project root
@@ -30,6 +29,7 @@ config.json
 ## Thank you:
   - Node.js
   - Discord.js
+  - https://legacy.gitbook.com/book/anidiotsguide_old/discord-js-bot-guide/details
 
 ## License
 #### ISC
