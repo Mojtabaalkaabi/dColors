@@ -8,7 +8,7 @@
     "type" : "git",
     "url" : "https://github.com/SuperDizor/dcolors.git"
   },
-  "license": "(MIT)",
+  "license": "(ISC)",
   "dependencies": {
     "discord.js": "^11.3.2"
   }
