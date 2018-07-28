@@ -42,6 +42,14 @@ config.json
 ```
 #### Create colors roles on your Discord Server with this following names. (Exact names are very important)
  - Add "admin" permission role manually to your bot, otherwise he will not have the permission to change members roles"
+## Start the server
+### Windows
+ - Change for your own directory inside "start.bat"
+ - Start the "start.bat" file
+
+### Ubuntu
+ - You can use this following to start the server
+ - https://stackoverflow.com/a/49197070
 
 ## Thank you:
   - Node.js
