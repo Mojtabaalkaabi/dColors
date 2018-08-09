@@ -40,7 +40,7 @@ config.json
 "dPurple",
 "dTurquoise"
 ```
-#### Create colors roles on your Discord Server with this following names. (Exact names are very important)
+#### Permission (Discord)
  - Add "admin" permission role manually to your bot, otherwise he will not have the permission to change members roles"
 ## Start the server
 ### Windows
