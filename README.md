@@ -41,11 +41,15 @@ config.json
 "dGreen", #008000
 "dAqua", #00FFFF
 "dTeal", 	#008080
-"dBlue", #0000FF
-"dNavy", #000080
-"dPink", #FF00FF
+"dBlue", #0e66a7
+"dNavy", #000099
+"dMagenta", #FF00FF
 "dPurple", #800080
 "dOrange", #FFA500
+"dMint", #aaffc3
+"dBeige", #fffac8
+"dLavender", #e6beff
+"dPink", #fabebe
 ```
 #### Permission (Discord)
  - Add "admin" permission role manually to your bot, otherwise he will not have the permission to change members roles"

@@ -19,9 +19,13 @@ var rolesColors = [
   "dTeal",
   "dBlue",
   "dNavy",
-  "dPink",
+  "dMagenta",
   "dPurple",
-  "dOrange"
+  "dOrange",
+  "dMint",
+  "dBeige",
+  "dLavender",
+  "dPink"
 ];
 
 var cRed = "\x1b[31m";
@@ -56,7 +60,7 @@ client.on("ready", () => {
   const activities_list = [
       "+dColors | for help",
       `Serving ${client.users.size} users`,
-      `Serving ${client.guilds.size} users`,
+      `Serving ${client.guilds.size} servers`,
       `+dColors | colors list`
       ];
 
@@ -128,7 +132,7 @@ client.on("message", async message => {
     "fields": [
       {
         "name": "Colors",
-        "value": "```\nwhite\nsilver\ngray\nblack\nred\nmaroon\nyellow\nbrown\nolive\nlime\ngreen\naqua\nteal\nblue\nnavy\npink\npurple\norange```"
+        "value": "```\nwhite\nsilver\ngray\nblack\nred\nmaroon\nyellow\nbrown\nolive\nlime\ngreen\naqua\nteal\nblue\nnavy\nmagenta\npurple\norange\nmint\nbeige\nlavender\npink```"
       },
       {
         "name": "You like this bot ?",
@@ -321,8 +325,8 @@ client.on("message", async message => {
       message.reply(`color changed for ${color}.`);
     }
 
-    // PINK
-    if(color === "pink") {
+    // MAGENTA
+    if(color === "magenta") {
       //let role = message.guild.roles.find("name", rolesColors[15]);
       var roleArray = message.guild.roles.find(role => role.name === rolesColors[15]);
       resetColor(message, member);
@@ -345,6 +349,46 @@ client.on("message", async message => {
     if(color === "orange") {
       //let role = message.guild.roles.find("name", rolesColors[17]);
       var roleArray = message.guild.roles.find(role => role.name === rolesColors[17]);
+      resetColor(message, member);
+      // Add the role & tell the user his color changed.
+      member.addRole(roleArray).catch(console.error);
+      message.reply(`color changed for ${color}.`);
+    }
+
+    // MINT
+    if(color === "mint") {
+      //let role = message.guild.roles.find("name", rolesColors[17]);
+      var roleArray = message.guild.roles.find(role => role.name === rolesColors[18]);
+      resetColor(message, member);
+      // Add the role & tell the user his color changed.
+      member.addRole(roleArray).catch(console.error);
+      message.reply(`color changed for ${color}.`);
+    }
+
+    // BEIGE
+    if(color === "beige") {
+      //let role = message.guild.roles.find("name", rolesColors[17]);
+      var roleArray = message.guild.roles.find(role => role.name === rolesColors[19]);
+      resetColor(message, member);
+      // Add the role & tell the user his color changed.
+      member.addRole(roleArray).catch(console.error);
+      message.reply(`color changed for ${color}.`);
+    }
+
+    // LAVENDER
+    if(color === "lavender") {
+      //let role = message.guild.roles.find("name", rolesColors[17]);
+      var roleArray = message.guild.roles.find(role => role.name === rolesColors[20]);
+      resetColor(message, member);
+      // Add the role & tell the user his color changed.
+      member.addRole(roleArray).catch(console.error);
+      message.reply(`color changed for ${color}.`);
+    }
+
+    // PINK
+    if(color === "pink") {
+      //let role = message.guild.roles.find("name", rolesColors[17]);
+      var roleArray = message.guild.roles.find(role => role.name === rolesColors[21]);
       resetColor(message, member);
       // Add the role & tell the user his color changed.
       member.addRole(roleArray).catch(console.error);
