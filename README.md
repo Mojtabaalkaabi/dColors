@@ -28,17 +28,24 @@ config.json
 
 #### Create colors roles on your Discord Server with this following names. (Exact names are very important)
 ```sh
-"dRed",
-"dBlue",
-"dGreen",
-"dGray",
-"dOrange",
-"dPink",
-"dYellow",
-"dBrown",
-"dBlack",
-"dPurple",
-"dTurquoise"
+"dWhite", #FFFFFF
+"dSilver", #C0C0C0
+"dGray", #808080
+"dBlack", #020202
+"dRed", #FF0000
+"dMaroon", #800000
+"dYellow", #FFFF00
+"dBrown", #472b04
+"dOlive", #808000
+"dLime", #00FF00
+"dGreen", #008000
+"dAqua", #00FFFF
+"dTeal", 	#008080
+"dBlue", #0000FF
+"dNavy", #000080
+"dPink", #FF00FF
+"dPurple", #800080
+"dOrange", #FFA500
 ```
 #### Permission (Discord)
  - Add "admin" permission role manually to your bot, otherwise he will not have the permission to change members roles"
@@ -58,7 +65,7 @@ config.json
 
 ## License
 #### ISC
-Copyright 2018 SuperDizor
+Copyright 2018-2019 SuperDizor
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
