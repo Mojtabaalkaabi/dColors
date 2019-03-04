@@ -40,7 +40,7 @@ config.json
 "dLime", #00FF00
 "dGreen", #008000
 "dAqua", #00FFFF
-"dTeal", 	#008080
+"dTeal", #008080
 "dBlue", #0e66a7
 "dNavy", #000099
 "dMagenta", #FF00FF
@@ -51,6 +51,8 @@ config.json
 "dLavender", #e6beff
 "dPink", #fabebe
 ```
+[Link for visual colors](https://www.zupimages.net/up/19/10/p9cl.png)
+
 #### Permission (Discord)
  - Add "admin" permission role manually to your bot, otherwise he will not have the permission to change members roles"
 ## Start the server

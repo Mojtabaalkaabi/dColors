@@ -61,7 +61,7 @@ client.on("ready", () => {
       "+dColors | for help",
       `Serving ${client.users.size} users`,
       `Serving ${client.guilds.size} servers`,
-      `+dColors | colors list`
+      `+dColors list | Colors List`
       ];
 
 
@@ -152,10 +152,12 @@ client.on("message", async message => {
   }
 });
 
-
-
-
 };
+
+// CONFIG | ADD ROLES TO SERVER
+if(color === "list") {
+  message.reply(`Colors currently available: https://www.zupimages.net/up/19/10/p9cl.png`);
+}
 
 
     // CONFIG | ADD ROLES TO SERVER
